@@ -1,0 +1,18 @@
+package com.example.spring_boot_test.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Province {
+    private String id;
+    private String name;
+    private int type;
+    private String typeText;
+    private String slug;
+}
