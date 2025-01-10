@@ -62,6 +62,7 @@ public class ProductController {
     @PutMapping("/update-product")
     public ResponseEntity<?> updateProduct(@RequestParam Long idProduct, @RequestBody Product product) {
         try {
+
             Product productUpdated = productService.updateProduct(idProduct, product);
             return new ResponseEntity<>(productUpdated, HttpStatus.OK);
         } catch (Exception e) {
